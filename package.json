@@ -1,0 +1,16 @@
+{
+  "name": "line-stamp-downloader",
+  "version": "1.0.0",
+  "description": "Download LINE Stamp thumbnails",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "makitune",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.5",
+    "eslint": "^6.8.0",
+    "@types/chrome": "^0.0.95"
+  }
+}

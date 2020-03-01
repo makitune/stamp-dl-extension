@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "stamp-dl-extension",
+  "version": "1.0.0",
+  "description": "Download Stamp thumbnails",
+  "author": "makitune",
+
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "64": "images/icon64.png",
+    "128": "images/icon128.png"
+  },
+
+  "page_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://store.line.me/stickershop/product/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "declarativeContent",
+    "downloads",
+    "https://store.line.me/stickershop/product/*"
+  ]
+}
